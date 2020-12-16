@@ -11,6 +11,8 @@ const GlobalStyles = createGlobalStyle`
     }
     * {
         box-sizing: border-box;
+        margin: 0;
+        padding: 0;
     }
     html {
         font-size: 10px;
@@ -21,9 +23,15 @@ const GlobalStyles = createGlobalStyle`
         background-color: var(--home-background);
         font-family: "Lato", sans-serif;
     }
-    h1 {
+    h1, h2, h3 {
         font-family: "Dancing Script", sans-serif;
+        margin: 0;
     }
+    a {
+        text-decoration: none;
+    }
+
+   
 
     /* Scrollbar Styles */
     body::-webkit-scrollbar {
