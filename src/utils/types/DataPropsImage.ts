@@ -1,13 +1,15 @@
 export interface DataPropsImage {
   file: {
     childImageSharp: {
-      fluid: {
-        aspectRatio: number
-        base64: string
-        sizes: string
-        src: string
-        srcSet: string
-      }
+      fluid: Fluid
     }
   }
+}
+
+export interface Fluid {
+  aspectRatio: number
+  base64: string
+  sizes: string
+  src: string
+  srcSet: string
 }

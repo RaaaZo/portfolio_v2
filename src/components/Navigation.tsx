@@ -79,6 +79,10 @@ const NavList = styled.ul`
     }
   }
 
+  @media (min-width: 1024px) {
+    padding: 2rem;
+  }
+
   a {
     color: var(--white);
     padding: 1rem;
@@ -94,7 +98,7 @@ const NavList = styled.ul`
     }
 
     @media (min-width: 1024px) {
-      padding: 2rem;
+      font-size: 2.2rem;
     }
   }
 `

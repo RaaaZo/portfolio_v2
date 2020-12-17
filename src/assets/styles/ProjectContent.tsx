@@ -4,6 +4,8 @@ import { Line } from "./aboutStyles"
 import { useInView } from "react-intersection-observer"
 import { motion, useAnimation } from "framer-motion"
 import { fadeIn } from "../../utils/animations/variants"
+import { Fluid } from "../../utils/types/DataPropsImage"
+import Img from "gatsby-image"
 
 const slashMotion = {
   rest: {
@@ -20,7 +22,21 @@ const slashMotion = {
   },
 }
 
-const ProjectContent = () => {
+interface Props {
+  data: {
+    githubUrl: string
+    liveUrl: string
+    title: string
+  }
+  image: {
+    fluid: Fluid | undefined
+  }
+}
+
+const ProjectContent: React.FC<Props> = ({
+  image,
+  data: { githubUrl, liveUrl, title },
+}) => {
   const windowSize = window.innerWidth
 
   const controls = useAnimation()
@@ -39,26 +55,26 @@ const ProjectContent = () => {
       animate={controls}
       ref={element}
     >
-      <h1>E-shop</h1>
+      <h1>{title}</h1>
       <StyledLine />
       <ImageWrapper initial="rest" whileHover="hover" animate="rest">
-        <motion.img
-          src="https://images.pexels.com/photos/2660212/pexels-photo-2660212.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1500&w=1260"
-          alt=""
-        />
+        <motion.div>
+          <Img fluid={image.fluid} alt={title} />
+        </motion.div>
+
         {/* @ts-expect-error */}
         <LinksWrapper variants={windowSize >= 1024 ? slashMotion : null}>
           <motion.a
             whileHover={{ scale: 1.2, borderColor: "var(--pink)" }}
             whileTap={{ scale: 0.8 }}
-            href="https://github.com/"
+            href={githubUrl}
           >
             Github
           </motion.a>
           <motion.a
             whileHover={{ scale: 1.2, borderColor: "var(--pink)" }}
             whileTap={{ scale: 0.8 }}
-            href="https://github.com/"
+            href={liveUrl}
           >
             Live
           </motion.a>

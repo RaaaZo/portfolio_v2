@@ -3,14 +3,25 @@ import { motion } from "framer-motion"
 import styled from "styled-components"
 
 import { FaHtml5 } from "react-icons/fa"
-import { fadeIn, modalFadeIn } from "../utils/animations/variants"
+import { modalFadeIn } from "../utils/animations/variants"
+import { IconType } from "react-icons/lib"
 
-const InfoButton = () => {
+interface Props {
+  data: {
+    svg: IconType
+    name: string
+    description: string
+  }
+}
+
+const InfoButton: React.FC<Props> = ({ data: { description, name, svg } }) => {
   const [modalIsOpen, setIsOpen] = React.useState(false)
 
   const handleModal = (): void => {
     setIsOpen(prevState => !prevState)
   }
+
+  const Icon = svg
 
   return (
     <>
@@ -20,13 +31,8 @@ const InfoButton = () => {
         animate={modalIsOpen ? "show" : "hidden"}
       >
         <ModalContent>
-          <h2>HTML</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-            voluptates perferendis alias ipsam? Autem accusantium dolore ratione
-            dolorem voluptatibus consectetur maiores laudantium qui eos
-            aspernatur quos fugiat nesciunt, earum inventore.
-          </p>
+          <h2>{name}</h2>
+          <p>{description}</p>
           <button onClick={handleModal}>Zamknij</button>
         </ModalContent>
       </Modal>
@@ -48,7 +54,7 @@ const InfoButton = () => {
           }}
           onClick={handleModal}
         >
-          <FaHtml5 className="react-icon" />
+          <Icon className="react-icon" />
         </Button>
       </div>
     </>

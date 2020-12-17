@@ -1,24 +1,29 @@
-import React from "react"
+import React, { ReactElement } from "react"
 import { motion } from "framer-motion"
 import styled from "styled-components"
 import { fadeIn } from "../utils/animations/variants"
 
-// @ts-expect-error
-import Responsive from "../assets/images/responsive.svg"
+interface Props {
+  data: {
+    svg: any
+    name: string
+    description: string
+  }
+}
 
-const SingleHeading = () => {
+const SingleHeading: React.FC<Props> = ({
+  data: { description, name, svg },
+}) => {
+  const Svg = svg
+
   return (
     <ContentWrapper variants={fadeIn} whileHover={{ scale: 1.05 }}>
       <SvgWrapper>
-        <Responsive className="svg" />
+        <Svg className="svg" />
       </SvgWrapper>
-      <motion.h3>Title</motion.h3>
+      <motion.h3>{name}</motion.h3>
       <Line />
-      <motion.p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus odio
-        unde accusamus reiciendis sequi, similique quos explicabo! Cumque,
-        reiciendis ut.
-      </motion.p>
+      <motion.p>{description}</motion.p>
     </ContentWrapper>
   )
 }
