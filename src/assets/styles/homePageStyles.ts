@@ -90,7 +90,7 @@ export const ContentWrapper = styled(motion.div)`
 
 export const Button = styled(motion.button)`
   border: 3px solid var(--green);
-  background-color: var(--home-background);
+  background-color: transparent;
   color: var(--white);
   padding: 2rem 3rem;
   margin-bottom: 3rem;

@@ -28,6 +28,10 @@ export const fadeIn = {
   hidden: {
     opacity: 0,
     scale: 0,
+    transition: {
+      duration: 1,
+      ease: "easeIn",
+    },
   },
   show: {
     opacity: 1,
@@ -67,6 +71,19 @@ export const fadeInWithStagger = {
       duration: 0.25,
       when: "beforeChildren",
       staggerChildren: 0.5,
+    },
+  },
+}
+
+export const modalFadeIn = {
+  hidden: { opacity: 0, display: "none" },
+  show: {
+    opacity: 1,
+    display: "flex",
+    transition: {
+      duration: 0.35,
+      when: "beforeChildren",
+      staggerChildren: 0.25,
     },
   },
 }

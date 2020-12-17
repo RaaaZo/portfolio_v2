@@ -10,7 +10,7 @@ const Footer = () => {
 }
 
 const Wrapper = styled.div`
-  max-height: 5vh;
+  height: 3vh;
   padding: 0.4rem;
   display: flex;
   justify-content: center;
