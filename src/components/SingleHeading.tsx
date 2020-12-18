@@ -31,6 +31,7 @@ const SingleHeading: React.FC<Props> = ({
 const ContentWrapper = styled(motion.div)`
   display: grid;
   grid-gap: 3rem;
+  grid-template-rows: auto auto auto 100%;
 
   h3 {
     text-align: center;

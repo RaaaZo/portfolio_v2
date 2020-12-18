@@ -28,9 +28,11 @@ interface Props {
     liveUrl: string
     title: string
   }
-  image: {
-    fluid: Fluid | undefined
-  }
+  image:
+    | {
+        fluid: Fluid
+      }
+    | undefined
 }
 
 const ProjectContent: React.FC<Props> = ({
@@ -59,6 +61,7 @@ const ProjectContent: React.FC<Props> = ({
       <StyledLine />
       <ImageWrapper initial="rest" whileHover="hover" animate="rest">
         <motion.div>
+          {/* @ts-expect-error */}
           <Img fluid={image.fluid} alt={title} />
         </motion.div>
 
@@ -96,6 +99,7 @@ const ContentWrapper = styled(motion.div)`
 
 const ImageWrapper = styled(motion.div)`
   width: 100%;
+  min-height: 200px;
   position: relative;
   border-radius: 15px;
   overflow: hidden;
@@ -104,10 +108,10 @@ const ImageWrapper = styled(motion.div)`
     max-height: 600px;
   }
 
-  img {
+  .gatsby-image-wrapper {
     width: 100%;
+    min-height: 200px;
     max-height: 400px;
-    object-fit: cover;
 
     @media (min-width: 1024px) {
       max-height: 600px;

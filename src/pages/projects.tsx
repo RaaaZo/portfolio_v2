@@ -44,8 +44,8 @@ export const query = graphql`
 `
 
 const Wrapper = styled(motion.div)`
-  min-height: 80vh;
-  padding: 1rem 5rem;
+  min-height: 82vh;
+  padding: 1rem 3rem;
   background-color: var(--pages-background);
   display: flex;
   flex-direction: column;

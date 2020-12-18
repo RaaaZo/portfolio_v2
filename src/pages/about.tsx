@@ -16,10 +16,7 @@ const AboutPage: React.FC<PageProps<DataPropsImage>> = ({ data }) => {
       >
         <AboutContent />
         <StyledImageWrapper variants={fadeIn}>
-          <Img
-            fluid={data.file.childImageSharp.fluid}
-            alt="Moje zdjęcie w koszuli"
-          />
+          <Img fluid={data.file.childImageSharp.fluid} alt="Ja w koszuli" />
         </StyledImageWrapper>
       </StyledWrapper>
     </>

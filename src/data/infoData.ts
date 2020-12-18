@@ -45,28 +45,28 @@ export const headingData: Data[] = [
     svg: Beautiful,
     name: "Dobrze zaprojektowane",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus odio unde accusamus reiciendis sequi, similique quos explicabo! Cumque, reiciendis ut.",
+      "Strony które tworzę są zawsze projektowane przeze mnie od samego początku. Najczęściej wykorzystuję w tym celu Figmę. Często sprawdzam strony designerskie i blogi żeby być na bieżąco z trendami panującymi w tym szybko zmieniającym się środowisku.",
   },
   {
     id: uniqid(),
     svg: Fast,
     name: "Szybkie",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus odio unde accusamus reiciendis sequi, similique quos explicabo! Cumque, reiciendis ut.",
+      "Stworzone przeze mnie strony są optymalizowane podczas developmentu przeze mnie jak i podczas tworzenia strony produkcyjnej za pomocą technologii zawartych w bibliotekach, które wykorzystuje. Ostatnimi czasy cenię sobie szczególnie Gatsby.js, który pozwala tworzyć niesamowicie szybkie strony internetowe.",
   },
   {
     id: uniqid(),
     svg: Seo,
     name: "SEO",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus odio unde accusamus reiciendis sequi, similique quos explicabo! Cumque, reiciendis ut.",
+      "SEO często jest kojarzone z procesem optymalizacji witryny, jednak w praktyce daje dużo więcej możliwości. To zarówno poprawa technicznych aspektów witryny, rozbudowa jej treści, jak i zdobywanie linków pozycjonujących z innych domen w sieci.",
   },
   {
     id: uniqid(),
     svg: Responsive,
     name: "Responsywne",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus odio unde accusamus reiciendis sequi, similique quos explicabo! Cumque, reiciendis ut.",
+      'Tworzę strony z podejściem "Mobile First". Oznacza to że rozpoczynam projektowanie od najmniejszych urządzeń i rozdzielczości, aby doświadczenie z użytkowania na nich było jak najlepsze. Następnie wraz ze wzrostem rozdzielczości stale dokładam nowe funkcjonalności oraz rozbudowuje aktualny układ strony.',
   },
 ]
 
@@ -114,7 +114,7 @@ export const skillsData: Data[] = [
     svg: FaJsSquare,
     name: "JavaScript",
     description:
-      "Najczęściej spotykanym zastosowaniem języka JavaScript są strony internetowe. Skrypty te służą najczęściej do zapewnienia interakcji poprzez reagowanie na zdarzenia, walidacji danych wprowadzanych w formularzach lub tworzenia złożonych efektów wizualnych. Skrypty JavaScriptu uruchamiane przez strony internetowe mają znacznie ograniczony dostęp do komputera użytkownika. Po stronie serwera JavaScript może działać w postaci node.js.",
+      "Najczęściej spotykanym zastosowaniem języka JavaScript są strony internetowe. Skrypty te służą najczęściej do zapewnienia interakcji poprzez reagowanie na zdarzenia, walidacji danych wprowadzanych w formularzach lub tworzenia złożonych efektów wizualnych. Skrypty JavaScriptu uruchamiane przez strony internetowe mają znacznie ograniczony dostęp do komputera użytkownika.",
   },
   {
     id: uniqid(),

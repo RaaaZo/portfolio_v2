@@ -14,7 +14,7 @@ const HomePage: React.FC<PageProps<DataPropsImage>> = ({ data }) => {
         <HomeLine />
         <HomeContent />
         <ImageWrapper variants={fadeIn} initial="hidden" animate="show">
-          <Img fluid={data.file.childImageSharp.fluid} alt="lorem" />
+          <Img fluid={data.file.childImageSharp.fluid} alt="Subrealistic man" />
         </ImageWrapper>
       </Wrapper>
     </>
@@ -25,7 +25,7 @@ export const query = graphql`
   {
     file(name: { eq: "home" }) {
       childImageSharp {
-        fluid(maxWidth: 800, maxHeight: 1000, quality: 100) {
+        fluid(maxWidth: 650, maxHeight: 800, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }

@@ -85,8 +85,8 @@ const NavList = styled.ul`
 
   a {
     color: var(--white);
-    padding: 1rem;
-    font-size: 1.8rem;
+    padding: 1rem 0rem;
+    font-size: 1.6rem;
     transition: color 0.3s ease;
 
     &:hover {

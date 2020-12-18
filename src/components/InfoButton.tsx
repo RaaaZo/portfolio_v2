@@ -91,41 +91,58 @@ const ModalContent = styled(motion.div)`
   position: absolute;
   width: 90%;
   max-width: 700px;
-  height: 60vh;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: var(--navigation-background);
   border: 3px solid var(--green);
   color: var(--white);
-  padding: 5rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   gap: 3rem;
 
-  @media (min-width: 768px) {
-    gap: 6rem;
-  }
-
   h2 {
     font-size: 5rem;
   }
   p {
+    font-size: 1.6rem;
     text-align: justify;
     text-align-last: center;
+    line-height: 2.2rem;
   }
   button {
-    border: 2px solid var(--white);
-    color: 2px solid var(--green);
+    border: 3px solid var(--white);
+    color: var(--green);
+    font-weight: 700;
     background-color: transparent;
     padding: 1rem 4rem;
     margin-top: 3rem;
     cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+      border-color: var(--green);
+      color: var(--white);
+    }
+  }
 
-    @media (min-width: 768px) {
-      margin-top: 5rem;
+  @media (orientation: landscape) and (max-width: 768px) {
+    gap: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    gap: 3rem;
+
+    p {
+      font-size: 1.8rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    p {
+      font-size: 2.1rem;
     }
   }
 `

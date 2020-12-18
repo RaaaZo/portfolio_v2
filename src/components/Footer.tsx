@@ -4,14 +4,13 @@ import styled from "styled-components"
 const Footer = () => {
   return (
     <Wrapper>
-      <a href="https://github.com/">RaaaZo &copy;</a>
+      <a href="https://github.com/">By RaaaZo with ❤</a>
     </Wrapper>
   )
 }
 
 const Wrapper = styled.div`
-  height: 3vh;
-  padding: 0.4rem;
+  height: 5vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,6 +18,14 @@ const Wrapper = styled.div`
   a {
     color: var(--white);
     font-size: 1.6rem;
+    transition: color 0.5s ease;
+    &:hover {
+      color: var(--pink);
+    }
+  }
+
+  @media (min-width: 768px) {
+    height: 3vh;
   }
 `
 

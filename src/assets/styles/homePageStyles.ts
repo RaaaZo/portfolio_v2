@@ -2,8 +2,9 @@ import { motion } from "framer-motion"
 import styled from "styled-components"
 
 export const Wrapper = styled(motion.div)`
-  min-height: 80vh;
+  min-height: 82vh;
   padding: 1rem;
+  padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -116,23 +117,23 @@ export const Button = styled(motion.button)`
 export const ImageWrapper = styled(motion.div)`
   width: 90%;
   max-width: 650px;
-  max-height: 80vh;
+  /* max-height: 80vh; */
 
   @media (min-width: 768px) {
     flex: 1;
 
     .gatsby-image-wrapper {
-      order: 1;
+      max-width: 650px;
       max-height: 80vh;
     }
   }
-  @media (min-width: 1100px) {
+  /* @media (min-width: 1100px) {
     max-height: 70vh;
     .gatsby-image-wrapper {
       order: 1;
       max-height: 70vh;
     }
-  }
+  } */
   @media (min-width: 1360px) {
     margin-right: 10%;
   }

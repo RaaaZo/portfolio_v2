@@ -16,9 +16,10 @@ const GlobalStyles = createGlobalStyle`
     }
     html {
         font-size: 10px;
+        overflow-x: hidden;
+         line-height: 1.5;
     }
     body {
-        overflow-x: hidden;
         font-size: 2rem;
         background-color: var(--home-background);
         font-family: "Lato", sans-serif;

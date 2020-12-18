@@ -14,6 +14,8 @@ export const Wrapper = styled(motion.div)`
   h1 {
     margin: 3rem;
     font-size: 5rem;
+    text-align: center;
+    text-align-last: center;
   }
 `
 
@@ -23,11 +25,12 @@ export const Heading = styled(motion.div)`
   grid-template-columns: minmax(300px, 700px);
   justify-content: center;
   gap: 6rem 4rem;
-  margin: 2rem auto;
+  margin: 3rem auto;
 
   @media (min-width: 768px) {
     grid-template-columns: repeat(2, minmax(300px, 450px));
     gap: 8rem 6rem;
+    margin: 5rem auto;
   }
 
   @media (min-width: 1360px) {
@@ -39,12 +42,26 @@ export const Heading = styled(motion.div)`
 export const HeadingText = styled(motion.div)`
   width: 90%;
   max-width: 1200px;
-  text-align: justify;
-  text-align-last: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 5rem auto;
+
+  .line {
+    background-color: var(--green);
+    width: 100%;
+  }
+
+  h1 {
+    align-self: flex-start;
+    font-size: 5rem;
+  }
 
   h4 {
     font-size: 1.8rem;
+    text-align: justify;
+    text-align-last: center;
+    margin-top: 2rem;
 
     @media (min-width: 768px) {
       font-size: 2rem;
@@ -59,5 +76,9 @@ export const ButtonsWrapper = styled(motion.div)`
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  gap: 3rem;
+  gap: 1rem;
+
+  @media (min-width: 768px) {
+    gap: 3rem;
+  }
 `

@@ -6,8 +6,11 @@ export const StyledWrapper = styled(Wrapper)`
   width: 100%;
   background-color: var(--pages-background);
   margin: 0;
-  padding: 5rem;
+  padding: 2rem;
 
+  @media (min-width: 768px) {
+    padding: 5rem;
+  }
   @media (min-width: 1360px) {
     margin-right: 0;
   }
@@ -59,7 +62,7 @@ export const WelcomeDiv = styled(motion.div)`
   span {
     width: 100%;
     display: block;
-    font-size: 3rem;
+    font-size: 2.6rem;
     margin: 3rem 0;
 
     &:nth-of-type(1) {
@@ -75,6 +78,10 @@ export const WelcomeDiv = styled(motion.div)`
 
     &:nth-of-type(3) {
       text-align: right;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 3.2rem;
     }
   }
 `

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion"
 import React from "react"
+import { Line } from "../assets/styles/aboutStyles"
 import {
   Wrapper,
   HeadingText,
@@ -19,12 +20,17 @@ const InfoPage = () => {
   return (
     <Wrapper>
       <HeadingText>
+        <motion.h1>Wstep</motion.h1>
+        <Line className="line" />
         <motion.h4 variants={fromLeftToRight} initial="hidden" animate="show">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea ipsum
-          magnam non laborum doloremque ducimus vel ipsam amet accusamus quidem
-          autem eius perspiciatis debitis doloribus rerum, laboriosam blanditiis
-          aspernatur distinctio laudantium animi! Assumenda accusamus distinctio
-          omnis, at ad perferendis repellendus!
+          Tworzenie stron internetowych stało się moją pasją w połowie zeszłego
+          roku. Od tamtego czasu poznałem wiele technologii. Niektóre przypadły
+          mi do gustu bardziej niż inne. Dlatego też po poznaniu Reacta zostałem
+          przy nim na dłużej. W międzyczasie nauczyłem się również Node.js,
+          który w połączeniu z MongoDB pozwalają w szybki sposób stworzyć
+          pełnoprawny backend na potrzeby stron internetowych. W niedalekiej
+          przyszłości chcę poznać technologię pozwalającą na pisanie aplikacji
+          mobilnych. Będzie to prawdopodobnie ReactNative.
         </motion.h4>
       </HeadingText>
       <Heading variants={fadeInWithStagger} initial="hidden" animate="show">
