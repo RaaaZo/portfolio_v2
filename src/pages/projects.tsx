@@ -2,7 +2,7 @@ import React from "react"
 import { motion } from "framer-motion"
 
 import styled from "styled-components"
-import ProjectContent from "../assets/styles/ProjectContent"
+import ProjectContent from "../components/ProjectContent"
 import { projectData } from "../data/projectsData"
 import { graphql, PageProps } from "gatsby"
 import { Fluid } from "../utils/types/DataPropsImage"
@@ -45,7 +45,7 @@ export const query = graphql`
 
 const Wrapper = styled(motion.div)`
   min-height: 82vh;
-  padding: 1rem 3rem;
+  padding: 5rem 2rem;
   background-color: var(--pages-background);
   display: flex;
   flex-direction: column;

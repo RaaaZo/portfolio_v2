@@ -19,7 +19,7 @@ module.exports = {
         fonts: {
           google: [
             {
-              family: "Lato",
+              family: "Roboto",
               variants: ["400", "700"],
             },
             {

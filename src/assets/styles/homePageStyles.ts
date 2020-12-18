@@ -117,7 +117,6 @@ export const Button = styled(motion.button)`
 export const ImageWrapper = styled(motion.div)`
   width: 90%;
   max-width: 650px;
-  /* max-height: 80vh; */
 
   @media (min-width: 768px) {
     flex: 1;
@@ -127,13 +126,7 @@ export const ImageWrapper = styled(motion.div)`
       max-height: 80vh;
     }
   }
-  /* @media (min-width: 1100px) {
-    max-height: 70vh;
-    .gatsby-image-wrapper {
-      order: 1;
-      max-height: 70vh;
-    }
-  } */
+
   @media (min-width: 1360px) {
     margin-right: 10%;
   }

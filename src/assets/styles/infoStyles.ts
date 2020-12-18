@@ -12,7 +12,7 @@ export const Wrapper = styled(motion.div)`
   gap: 3rem;
 
   h1 {
-    margin: 3rem;
+    margin-bottom: 3rem;
     font-size: 5rem;
     text-align: center;
     text-align-last: center;
@@ -41,7 +41,7 @@ export const Heading = styled(motion.div)`
 
 export const HeadingText = styled(motion.div)`
   width: 90%;
-  max-width: 1200px;
+  max-width: 1400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

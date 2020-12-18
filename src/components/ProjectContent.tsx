@@ -1,13 +1,13 @@
 import React from "react"
 import styled from "styled-components"
-import { Line } from "./aboutStyles"
+import { Line } from "../assets/styles/aboutStyles"
 import { useInView } from "react-intersection-observer"
 import { motion, useAnimation } from "framer-motion"
-import { fadeIn } from "../../utils/animations/variants"
-import { Fluid } from "../../utils/types/DataPropsImage"
+import { fadeIn } from "../utils/animations/variants"
+import { Fluid } from "../utils/types/DataPropsImage"
 import Img from "gatsby-image"
 
-const slashMotion = {
+const projectAnimation = {
   rest: {
     opacity: 0,
     transition: {
@@ -66,7 +66,7 @@ const ProjectContent: React.FC<Props> = ({
         </motion.div>
 
         {/* @ts-expect-error */}
-        <LinksWrapper variants={windowSize >= 1024 ? slashMotion : null}>
+        <LinksWrapper variants={windowSize >= 1024 ? projectAnimation : null}>
           <motion.a
             whileHover={{ scale: 1.2, borderColor: "var(--pink)" }}
             whileTap={{ scale: 0.8 }}
@@ -94,6 +94,10 @@ const ContentWrapper = styled(motion.div)`
 
   h1 {
     font-size: 5rem;
+  }
+
+  @media (min-width: 768px) {
+    width: 90%;
   }
 `
 
@@ -130,10 +134,6 @@ const LinksWrapper = styled(motion.div)`
   align-items: center;
   background-color: rgb(0, 0, 0, 0.5);
 
-  @media (min-width: 768px) {
-    justify-content: space-around;
-  }
-
   a {
     width: 150px;
     margin: 0 3rem;
@@ -144,6 +144,14 @@ const LinksWrapper = styled(motion.div)`
     background-color: var(--white);
     border-radius: 15px;
     text-align: center;
+
+    @media (min-width: 768px) {
+      margin: 0 8rem;
+    }
+
+    @media (min-width: 1360px) {
+      margin: 0 10rem;
+    }
   }
 `
 

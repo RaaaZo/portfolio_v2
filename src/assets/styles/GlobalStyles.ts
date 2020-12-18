@@ -22,7 +22,7 @@ const GlobalStyles = createGlobalStyle`
     body {
         font-size: 2rem;
         background-color: var(--home-background);
-        font-family: "Lato", sans-serif;
+        font-family: "Roboto", sans-serif;
     }
     h1, h2, h3 {
         font-family: "Dancing Script", sans-serif;
@@ -32,7 +32,6 @@ const GlobalStyles = createGlobalStyle`
         text-decoration: none;
     }
 
-   
 
     /* Scrollbar Styles */
     body::-webkit-scrollbar {

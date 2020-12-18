@@ -1,5 +1,4 @@
 import React from "react"
-import { Link, navigate } from "gatsby"
 import { motion } from "framer-motion"
 import { contentWrapperVariants, fadeIn } from "../utils/animations/variants"
 import {
@@ -7,6 +6,9 @@ import {
   ContentWrapper,
   StyledSpan,
 } from "../assets/styles/homePageStyles"
+
+// @ts-expect-error
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const HomeContent = () => {
   return (
@@ -18,16 +20,16 @@ const HomeContent = () => {
       <motion.h1 variants={fadeIn}>Mateusz Koprowicz</motion.h1>
       <motion.h2 variants={fadeIn}>Web-Developer</motion.h2>
 
-      <Button onClick={() => navigate("/info")} variants={fadeIn}>
-        Informacje
-      </Button>
+      <AniLink fade to="/info">
+        <Button variants={fadeIn}>Informacje</Button>
+      </AniLink>
 
-      <Link to="/contact">
+      <AniLink fade to="/contact">
         <motion.p variants={fadeIn}>
           Skontaktuj się <StyledSpan className="green"> ze mną </StyledSpan> w
           sprawie współpracy...
         </motion.p>
-      </Link>
+      </AniLink>
     </ContentWrapper>
   )
 }

@@ -97,6 +97,10 @@ const NavList = styled.ul`
       color: var(--green);
     }
 
+    @media (min-width: 500px) {
+      font-size: 1.8rem;
+    }
+
     @media (min-width: 1024px) {
       font-size: 2.2rem;
     }

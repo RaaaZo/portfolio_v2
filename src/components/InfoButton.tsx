@@ -111,7 +111,7 @@ const ModalContent = styled(motion.div)`
     font-size: 1.6rem;
     text-align: justify;
     text-align-last: center;
-    line-height: 2.2rem;
+    line-height: 1.5;
   }
   button {
     border: 3px solid var(--white);

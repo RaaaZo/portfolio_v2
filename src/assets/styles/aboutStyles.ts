@@ -1,52 +1,98 @@
 import { motion } from "framer-motion"
 import styled from "styled-components"
-import { Wrapper, ImageWrapper } from "./homePageStyles"
 
-export const StyledWrapper = styled(Wrapper)`
-  width: 100%;
+export const Wrapper = styled(motion.div)`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3rem;
+
   background-color: var(--pages-background);
-  margin: 0;
-  padding: 2rem;
+  padding: 5rem 2rem;
 
-  @media (min-width: 768px) {
-    padding: 5rem;
+  @media (min-width: 1024px) {
+    padding: 5rem 0rem;
   }
+`
+export const ContentWrapper = styled(motion.div)`
+  max-width: 1400px;
+  width: 90%;
+  max-width: 700px;
+  display: grid;
+  grid-template-rows: auto 400px auto;
+  grid-gap: 3rem;
+  margin: 5rem auto;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 400px auto;
+    max-width: 100%;
+  }
+
   @media (min-width: 1360px) {
-    margin-right: 0;
+    gap: 6rem;
   }
 `
 
-export const ContentWrapper = styled(motion.div)`
+export const HeadingWrapper = styled(motion.div)`
+  width: 100%;
+  h1 {
+    margin-bottom: 3rem;
+    font-size: 5rem;
+  }
+
+  @media (min-width: 1024px) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+`
+
+export const AboutWrapper = styled(motion.div)`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  margin: 2rem auto;
   gap: 3rem;
+  text-align: justify;
+  text-align-last: center;
 
-  h1 {
-    align-self: flex-start;
+  @media (min-width: 1024px) {
+    grid-column: 1/2;
+    grid-row: 2/4;
+    padding: 1rem;
+  }
+`
+
+export const ImageWrapper = styled(motion.div)`
+  width: 100%;
+  height: 400px;
+  border-radius: 15px;
+  overflow: hidden;
+
+  .gatsby-image-wrapper {
+    height: 400px;
   }
 
-  p {
-    text-align: justify;
-    text-align-last: center;
-    margin: 3rem auto;
+  @media (min-width: 1024px) {
+    grid-column: 2/3;
+    grid-row: 1/4;
+    height: 700px;
+    align-self: center;
+    margin-top: 10rem;
+
+    .gatsby-image-wrapper {
+      height: 700px;
+    }
   }
 
-  @media (min-width: 768px) {
-    max-width: 400px;
-  }
-  @media (min-width: 1360px) {
-    max-width: 40%;
-  }
-  @media (min-width: 1600px) {
-    max-width: 40%;
+  @media (min-width: 1024px) {
+    align-self: start;
   }
 `
 
 export const Line = styled(motion.div)`
-  width: 90%;
+  width: 100%;
   height: 4px;
   background-color: var(--pink);
   border-radius: 50%;
@@ -83,22 +129,5 @@ export const WelcomeDiv = styled(motion.div)`
     @media (min-width: 768px) {
       font-size: 3.2rem;
     }
-  }
-`
-
-export const StyledImageWrapper = styled(ImageWrapper)`
-  margin-top: 5rem;
-  @media (min-width: 768px) {
-    margin-left: 3rem;
-    min-height: 50vh;
-
-    .gatsby-image-wrapper {
-      order: 1;
-      min-height: 50vh;
-    }
-  }
-
-  @media (min-width: 1360px) {
-    margin-right: 0;
   }
 `

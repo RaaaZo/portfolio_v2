@@ -16,9 +16,9 @@ export const projectData: Data[] = [
   },
   {
     id: uniqid(),
-    githubUrl: "https://github.com/RaaaZo/e-shop",
-    liveUrl: "https://e-shop-730ae.web.app/",
-    title: "E-shop",
+    githubUrl: "https://github.com/RaaaZo/pokemons",
+    liveUrl: "https://raaazo.github.io/pokemons/",
+    title: "PokeDex",
   },
   {
     id: uniqid(),
@@ -28,9 +28,9 @@ export const projectData: Data[] = [
   },
   {
     id: uniqid(),
-    githubUrl: "https://github.com/RaaaZo/pokemons",
-    liveUrl: "https://raaazo.github.io/pokemons/",
-    title: "PokeDex",
+    githubUrl: "https://github.com/RaaaZo/e-shop",
+    liveUrl: "https://e-shop-730ae.web.app/",
+    title: "E-shop",
   },
   {
     id: uniqid(),

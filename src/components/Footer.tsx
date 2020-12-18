@@ -4,7 +4,7 @@ import styled from "styled-components"
 const Footer = () => {
   return (
     <Wrapper>
-      <a href="https://github.com/">By RaaaZo with ❤</a>
+      <a href="https://github.com/">by RaaaZo with ❤</a>
     </Wrapper>
   )
 }
