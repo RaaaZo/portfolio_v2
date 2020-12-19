@@ -19,10 +19,12 @@ import {
 import AboutContent from "../components/AboutContent"
 import { motion } from "framer-motion"
 import WelcomeContent from "../components/WelcomeContent"
+import SEO from "../components/SEO"
 
 const AboutPage: React.FC<PageProps<DataPropsImage>> = ({ data }) => {
   return (
     <>
+      <SEO />
       <Wrapper variants={fadeInWithStagger} initial="hidden" animate="show">
         <ContentWrapper>
           <HeadingWrapper>
@@ -40,7 +42,7 @@ const AboutPage: React.FC<PageProps<DataPropsImage>> = ({ data }) => {
             <Img fluid={data.file.childImageSharp.fluid} alt="Ja w koszuli" />
           </ImageWrapper>
 
-          <AboutWrapper>
+          <AboutWrapper variants={fadeIn}>
             <AboutContent />
           </AboutWrapper>
         </ContentWrapper>

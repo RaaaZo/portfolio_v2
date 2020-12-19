@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Mateusz Koprowicz Portfolio`,
-    description: `Portfolio page made by Mateusz Koprowicz`,
+    description: `Portfolio wykonane przez Mateusza Koprowicza. Jeśli jesteś zainteresowany zatrudnieniem mnie odezwij się!`,
     author: `Mateusz Koprowicz`,
+    baseUrl: `https://raaazo.github.io/portfolio_v2/`,
   },
   pathPrefix: "/portfolio_v2",
   plugins: [

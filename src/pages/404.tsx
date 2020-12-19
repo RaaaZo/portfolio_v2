@@ -2,12 +2,16 @@ import React from "react"
 import styled from "styled-components"
 // @ts-expect-error
 import ErrorSvg from "../assets/images/error.svg"
+import SEO from "../components/SEO"
 
 const NotFoundPage = () => (
-  <Wrapper>
-    <StyledError />
-    <h1>Nie znaleziono takiej strony!</h1>
-  </Wrapper>
+  <>
+    <SEO />
+    <Wrapper>
+      <StyledError />
+      <h1>Nie znaleziono takiej strony!</h1>
+    </Wrapper>
+  </>
 )
 
 const Wrapper = styled.div`

@@ -28,10 +28,6 @@ export const ContentWrapper = styled(motion.div)`
     grid-template-columns: 1fr 1fr;
     max-width: 100%;
   }
-
-  @media (min-width: 1360px) {
-    gap: 6rem;
-  }
 `
 
 export const HeadingWrapper = styled(motion.div)`
@@ -55,6 +51,10 @@ export const AboutWrapper = styled(motion.div)`
   gap: 3rem;
   text-align: justify;
   text-align-last: center;
+
+  p {
+    margin: 2rem auto;
+  }
 
   @media (min-width: 1024px) {
     grid-column: 1/2;
@@ -126,9 +126,13 @@ export const WelcomeDiv = styled(motion.div)`
 
     &:nth-of-type(2) {
       text-align: center;
-      font-size: 4rem;
+      font-size: 2.5rem;
       font-family: "Dancing Script", sans-serif;
       color: var(--green);
+
+      @media (min-width: 450px) {
+        font-size: 4rem;
+      }
     }
 
     &:nth-of-type(3) {

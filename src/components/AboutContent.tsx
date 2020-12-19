@@ -10,7 +10,7 @@ import { Line } from "../assets/styles/aboutStyles"
 const AboutContent = () => {
   return (
     <>
-      <motion.p variants={fadeIn}>
+      <motion.p>
         W czerwcu tego roku zdobyłem tytuł magistra na kierunku Systemy
         Informatyczne w Bezpieczeństwie na Akademii Marynarki Wojennej w Gdyni.
         Podstawy programowania poznałem na studiach jednak zainteresowałem się
@@ -19,9 +19,9 @@ const AboutContent = () => {
         front-endu.
       </motion.p>
 
-      <Line variants={fromRightToLeft} />
+      <Line />
 
-      <motion.p variants={fadeIn}>
+      <motion.p>
         Okazało się to strzałem w przysłowiową dziesiątkę. Front-end wciągnął
         mnie od początku. Po poznaniu HTML i CSS postanowiłem wreszcie dokładnie
         poznać JavaScript. Po poznaniu solidnych podstaw z JS zrobiłem pare
@@ -34,17 +34,17 @@ const AboutContent = () => {
         unikanie błędów w kodzie.
       </motion.p>
 
-      <Line variants={fromLeftToRight} />
+      <Line />
 
-      <motion.p variants={fadeIn}>
+      <motion.p>
         Po poznaniu Reacta przyszła kolej na rozwiązania back-endowe. Znając juz
         JS postawiłem na Node.js ucząc się go jednocześnie z bazą danych
         MongoDb. Dzięki temu moje strony mogły zyskać kolejne funkcjonalności.
       </motion.p>
 
-      <Line variants={fromRightToLeft} />
+      <Line />
 
-      <motion.p variants={fadeIn}>
+      <motion.p>
         Ostatnimi czasy postanowiłem pójść o krok dalej i nauczyć się Gatsby.js.
         Na razie opanowałem jego podstawy i ciągle szlifuję umiejętności jednak
         w planach mam poznanie również Next.js. W międzyczasie poznałem wiele

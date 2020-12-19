@@ -6,6 +6,7 @@ import ProjectContent from "../components/ProjectContent"
 import { projectData } from "../data/projectsData"
 import { graphql, PageProps } from "gatsby"
 import { Fluid } from "../utils/types/DataPropsImage"
+import SEO from "../components/SEO"
 
 interface DataProps {
   allImageSharp: {
@@ -19,15 +20,18 @@ const ProjectsPage: React.FC<PageProps<DataProps>> = ({ data }) => {
   const gatsbyImages = data.allImageSharp.nodes
 
   return (
-    <Wrapper>
-      {projectData.map(item => {
-        const fluid = gatsbyImages.find(({ fluid }) =>
-          fluid.src.includes(item.title)
-        )
+    <>
+      <SEO />
+      <Wrapper>
+        {projectData.map(item => {
+          const fluid = gatsbyImages.find(({ fluid }) =>
+            fluid.src.includes(item.title)
+          )
 
-        return <ProjectContent key={item.id} data={item} image={fluid} />
-      })}
-    </Wrapper>
+          return <ProjectContent key={item.id} data={item} image={fluid} />
+        })}
+      </Wrapper>
+    </>
   )
 }
 

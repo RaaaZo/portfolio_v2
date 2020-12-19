@@ -40,17 +40,18 @@ export const MediaWrapper = styled(motion.div)`
 `
 
 export const SocialMediaWrapper = styled(motion.div)`
-  h1 {
+  h3 {
     text-align: center;
-    margin: 5rem;
-    font-size: 5rem;
+    margin: 5rem auto;
+    font-size: 4rem;
   }
 
   @media (min-width: 1024px) {
     width: 50%;
 
-    h1 {
+    h3 {
       margin-left: 0;
+      font-size: 5rem;
     }
   }
 `

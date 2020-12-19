@@ -17,10 +17,12 @@ import {
   IconsWrapper,
   MediaWrapper,
 } from "../assets/styles/contactStyles"
+import SEO from "../components/SEO"
 
 const ContactPage: React.FC<PageProps<DataPropsImage>> = ({ data }) => {
   return (
     <>
+      <SEO />
       <Wrapper initial="hidden" animate="show">
         <WelcomeWrapper>
           <WelcomeContent
@@ -32,7 +34,7 @@ const ContactPage: React.FC<PageProps<DataPropsImage>> = ({ data }) => {
 
         <MediaWrapper>
           <SocialMediaWrapper initial="hidden" animate="show">
-            <motion.h1 variants={fadeIn}>Social Media</motion.h1>
+            <motion.h3 variants={fadeIn}>Social Media</motion.h3>
             <IconsWrapper variants={fromLeftToRight}>
               <IconContext.Provider value={{ className: "icon" }}>
                 <a href="https://github.com/RaaaZo">
