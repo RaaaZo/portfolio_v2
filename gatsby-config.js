@@ -4,6 +4,7 @@ module.exports = {
     description: `Portfolio page made by Mateusz Koprowicz`,
     author: `Mateusz Koprowicz`,
   },
+  pathPrefix: "/portfolio_v2",
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -39,7 +40,7 @@ module.exports = {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /images/, // See below to configure properly
+          include: /images/,
         },
       },
     },
