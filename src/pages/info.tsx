@@ -20,7 +20,7 @@ const InfoPage = () => {
   return (
     <Wrapper>
       <HeadingText>
-        <motion.h1>Wstep</motion.h1>
+        <motion.h1>Wprowadzenie</motion.h1>
         <Line className="line" />
         <motion.h4 variants={fromLeftToRight} initial="hidden" animate="show">
           Tworzenie stron internetowych stało się moją pasją w połowie zeszłego
@@ -49,7 +49,7 @@ const InfoPage = () => {
       </ButtonsWrapper>
 
       <motion.h1 variants={fromRightToLeft} initial="hidden" animate="show">
-        Kolejne do nauki
+        Kolejne kroki
       </motion.h1>
       <ButtonsWrapper>
         {upcomingSkillsData.map(item => (

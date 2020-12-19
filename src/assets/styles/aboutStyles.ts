@@ -20,13 +20,12 @@ export const ContentWrapper = styled(motion.div)`
   width: 90%;
   max-width: 700px;
   display: grid;
-  grid-template-rows: auto 400px auto;
+  grid-template-rows: auto auto auto;
   grid-gap: 3rem;
   margin: 5rem auto;
 
   @media (min-width: 1024px) {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 400px auto;
     max-width: 100%;
   }
 
@@ -66,23 +65,33 @@ export const AboutWrapper = styled(motion.div)`
 
 export const ImageWrapper = styled(motion.div)`
   width: 100%;
-  height: 400px;
+  max-width: 650px;
   border-radius: 15px;
   overflow: hidden;
+  justify-self: center;
 
   .gatsby-image-wrapper {
-    height: 400px;
+    width: 100%;
+    max-width: 650px;
+  }
+
+  @media (min-width: 600px) {
+    max-height: 700px;
+
+    .gatsby-image-wrapper {
+      max-height: 700px;
+    }
   }
 
   @media (min-width: 1024px) {
     grid-column: 2/3;
     grid-row: 1/4;
-    height: 700px;
+    height: 1000px;
     align-self: center;
     margin-top: 10rem;
 
     .gatsby-image-wrapper {
-      height: 700px;
+      height: 1000px;
     }
   }
 
@@ -108,7 +117,7 @@ export const WelcomeDiv = styled(motion.div)`
   span {
     width: 100%;
     display: block;
-    font-size: 2.6rem;
+    font-size: 2.2rem;
     margin: 3rem 0;
 
     &:nth-of-type(1) {

@@ -51,7 +51,7 @@ const AboutPage: React.FC<PageProps<DataPropsImage>> = ({ data }) => {
 
 export const query = graphql`
   {
-    file(name: { eq: "about" }) {
+    file(name: { eq: "cv" }) {
       childImageSharp {
         fluid(maxWidth: 600, maxHeight: 700, quality: 100) {
           ...GatsbyImageSharpFluid

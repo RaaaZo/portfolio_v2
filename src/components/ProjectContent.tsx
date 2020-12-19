@@ -39,7 +39,10 @@ const ProjectContent: React.FC<Props> = ({
   image,
   data: { githubUrl, liveUrl, title },
 }) => {
-  const windowSize = window.innerWidth
+  let windowSize
+  if (typeof window !== `undefined`) {
+    windowSize = window.innerWidth
+  }
 
   const controls = useAnimation()
   const [element, view] = useInView({ rootMargin: "300px 0px" })

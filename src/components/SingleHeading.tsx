@@ -31,11 +31,12 @@ const SingleHeading: React.FC<Props> = ({
 const ContentWrapper = styled(motion.div)`
   display: grid;
   grid-gap: 3rem;
-  grid-template-rows: auto auto auto 1fr;
+  grid-template-rows: auto 120px auto 1fr;
 
   h3 {
     text-align: center;
     font-size: 4rem;
+    align-self: center;
   }
 
   p {

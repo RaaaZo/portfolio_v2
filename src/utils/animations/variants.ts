@@ -68,9 +68,8 @@ export const fadeInWithStagger = {
   show: {
     opacity: 1,
     transition: {
-      duration: 0.25,
       when: "beforeChildren",
-      staggerChildren: 0.5,
+      staggerChildren: 0.25,
     },
   },
 }

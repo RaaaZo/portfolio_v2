@@ -118,13 +118,13 @@ export const ImageWrapper = styled(motion.div)`
   width: 90%;
   max-width: 650px;
 
+  .gatsby-image-wrapper {
+    max-width: 650px;
+    max-height: 80vh;
+  }
+
   @media (min-width: 768px) {
     flex: 1;
-
-    .gatsby-image-wrapper {
-      max-width: 650px;
-      max-height: 80vh;
-    }
   }
 
   @media (min-width: 1360px) {

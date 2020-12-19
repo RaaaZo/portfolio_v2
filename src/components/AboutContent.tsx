@@ -11,11 +11,12 @@ const AboutContent = () => {
   return (
     <>
       <motion.p variants={fadeIn}>
-        W czerwcu tego roku zostałem magistrem na kierunku Systemy Informatyczne
-        w bezpieczeństwie na Akademii Marynarki Wojennej w Gdyni. Podstawy
-        programowania poznałem na studiach jednak zainteresowałem się tym
-        tematem bardziej dopiero w połowie 2019 roku. Na początku spróbowałem
-        Pythona, jednak po krótkim czasie przeniosłem się w świat front-endu.
+        W czerwcu tego roku zdobyłem tytuł magistra na kierunku Systemy
+        Informatyczne w Bezpieczeństwie na Akademii Marynarki Wojennej w Gdyni.
+        Podstawy programowania poznałem na studiach jednak zainteresowałem się
+        tym tematem bardziej dopiero w połowie 2019 roku. Na początku
+        spróbowałem Pythona, jednak po krótkim czasie przeniosłem się w świat
+        front-endu.
       </motion.p>
 
       <Line variants={fromRightToLeft} />
@@ -26,10 +27,11 @@ const AboutContent = () => {
         poznać JavaScript. Po poznaniu solidnych podstaw z JS zrobiłem pare
         projektów, aby utrwalić wiedzę i stanąłem przed wyborem frameworka. Moim
         pierwszym wyborem było Vue, jednak po poznaniu jego podstaw spróbowałem
-        Reacta, który notabene jest jedynie biblioteką z wielkimi możliwościami.
-        Od razu przypadł mi do gustu. Po poznaniu podstaw postanowiłem połączyć
-        naukę Reacta z TypeScriptem i wykorzystać w pełni możliwości typowania
-        które niesamowicie ułatwiają chociażby unikanie błędów w kodzie.
+        Reacta, który notabene jest biblioteką z wielkimi możliwościami, a nie
+        pełnoprawnym frameworkiem. Od razu przypadł mi do gustu. Po poznaniu
+        podstaw postanowiłem połączyć naukę Reacta z TypeScriptem i wykorzystać
+        w pełni możliwości typowania, które niesamowicie ułatwiają chociażby
+        unikanie błędów w kodzie.
       </motion.p>
 
       <Line variants={fromLeftToRight} />
