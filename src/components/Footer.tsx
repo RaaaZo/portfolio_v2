@@ -9,7 +9,7 @@ const Footer = () => {
   )
 }
 
-const Wrapper = styled.div`
+const Wrapper = styled.footer`
   height: 5vh;
   display: flex;
   justify-content: center;

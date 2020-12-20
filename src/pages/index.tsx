@@ -6,7 +6,6 @@ import { HomeLine } from "../components/SvgLines"
 import { ImageWrapper, Wrapper } from "../assets/styles/homePageStyles"
 import { DataPropsImage } from "../utils/types/DataPropsImage"
 import HomeContent from "../components/HomeContent"
-import Navigation from "../components/Navigation"
 import SEO from "../components/SEO"
 
 const HomePage: React.FC<PageProps<DataPropsImage>> = ({ data }) => {

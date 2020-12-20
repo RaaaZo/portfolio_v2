@@ -7,14 +7,12 @@ import { modalFadeIn } from "../utils/animations/variants"
 import { IconType } from "react-icons/lib"
 
 interface Props {
-  data: {
-    svg: IconType
-    name: string
-    description: string
-  }
+  svg: IconType
+  name: string
+  description: string
 }
 
-const InfoButton: React.FC<Props> = ({ data: { description, name, svg } }) => {
+const InfoButton: React.FC<Props> = ({ description, name, svg }) => {
   const [modalIsOpen, setIsOpen] = React.useState(false)
 
   const handleModal = (): void => {

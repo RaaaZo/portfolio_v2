@@ -18,17 +18,20 @@ import {
   MediaWrapper,
 } from "../assets/styles/contactStyles"
 import SEO from "../components/SEO"
+import { useTranslation } from "react-i18next"
 
 const ContactPage: React.FC<PageProps<DataPropsImage>> = ({ data }) => {
+  const { t } = useTranslation("contact")
+
   return (
     <>
       <SEO />
       <Wrapper initial="hidden" animate="show">
         <WelcomeWrapper>
           <WelcomeContent
-            firstSpan="Spodobały Ci się projekty?"
-            secondSpan="Napisz do mnie!"
-            thirdSpan="Bądźmy w kontakcie."
+            firstSpan={t("heading.firstHeading")}
+            secondSpan={t("heading.secondHeading")}
+            thirdSpan={t("heading.thirdHeading")}
           />
         </WelcomeWrapper>
 

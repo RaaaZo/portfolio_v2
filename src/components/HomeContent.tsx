@@ -6,11 +6,14 @@ import {
   ContentWrapper,
   StyledSpan,
 } from "../assets/styles/homePageStyles"
+import { useTranslation } from "react-i18next"
 
 // @ts-expect-error
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const HomeContent = () => {
+  const { t } = useTranslation("home")
+
   return (
     <ContentWrapper
       variants={contentWrapperVariants}
@@ -21,13 +24,14 @@ const HomeContent = () => {
       <motion.h2 variants={fadeIn}>Web-Developer</motion.h2>
 
       <AniLink fade to="/info">
-        <Button variants={fadeIn}>Informacje</Button>
+        <Button variants={fadeIn}>{t("button")}</Button>
       </AniLink>
 
       <AniLink fade to="/contact">
         <motion.p variants={fadeIn}>
-          Skontaktuj się <StyledSpan className="green"> ze mną </StyledSpan> w
-          sprawie współpracy...
+          {t("firstParagraph")}{" "}
+          <StyledSpan className="green"> {t("span")} </StyledSpan>{" "}
+          {t("secondParagraph")}
         </motion.p>
       </AniLink>
     </ContentWrapper>

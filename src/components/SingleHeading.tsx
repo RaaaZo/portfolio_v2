@@ -4,16 +4,12 @@ import styled from "styled-components"
 import { fadeIn } from "../utils/animations/variants"
 
 interface Props {
-  data: {
-    svg: any
-    name: string
-    description: string
-  }
+  svg: any
+  name: string
+  description: string
 }
 
-const SingleHeading: React.FC<Props> = ({
-  data: { description, name, svg },
-}) => {
+const SingleHeading: React.FC<Props> = ({ description, name, svg }) => {
   const Svg = svg
 
   return (

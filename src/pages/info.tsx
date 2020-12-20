@@ -1,5 +1,6 @@
 import { motion } from "framer-motion"
 import React from "react"
+import { useTranslation } from "react-i18next"
 import { Line } from "../assets/styles/aboutStyles"
 import {
   Wrapper,
@@ -17,47 +18,67 @@ import {
   fromRightToLeft,
 } from "../utils/animations/variants"
 
+interface HeadingAndButtonsData {
+  id: string
+  svg: any
+}
+
 const InfoPage = () => {
+  const { t } = useTranslation("info")
+
   return (
     <>
       <SEO />
       <Wrapper>
         <HeadingText>
-          <motion.h1>Wprowadzenie</motion.h1>
+          <motion.h1>{t("title")}</motion.h1>
           <Line className="line" />
           <motion.h4 variants={fromLeftToRight} initial="hidden" animate="show">
-            Tworzenie stron internetowych stało się moją pasją w połowie
-            zeszłego roku. Od tamtego czasu poznałem wiele technologii. Niektóre
-            przypadły mi do gustu bardziej niż inne. Dlatego też po poznaniu
-            Reacta zostałem przy nim na dłużej. W międzyczasie nauczyłem się
-            również Node.js, który w połączeniu z MongoDB pozwalają w szybki
-            sposób stworzyć pełnoprawny backend na potrzeby stron internetowych.
-            W niedalekiej przyszłości chcę poznać technologię pozwalającą na
-            pisanie aplikacji mobilnych. Będzie to prawdopodobnie ReactNative.
+            {t("header")}
           </motion.h4>
         </HeadingText>
+
         <Heading variants={fadeInWithStagger} initial="hidden" animate="show">
-          {headingData.map(item => (
-            <SingleHeading data={item} key={item.id} />
+          {headingData.map(({ svg, id }: HeadingAndButtonsData, index) => (
+            <SingleHeading
+              svg={svg}
+              name={t(`headings.${index}.name`)}
+              description={t(`headings.${index}.description`)}
+              key={id}
+            />
           ))}
+
+          {console.log()}
         </Heading>
 
         <motion.h1 variants={fromRightToLeft} initial="hidden" animate="show">
-          Co umiem
+          {t("skillsHeader")}
         </motion.h1>
         <ButtonsWrapper>
-          {skillsData.map(item => (
-            <InfoButton data={item} key={item.id} />
+          {skillsData.map(({ svg, id }: HeadingAndButtonsData, index) => (
+            <InfoButton
+              svg={svg}
+              name={t(`skills.${index}.name`)}
+              description={t(`skills.${index}.description`)}
+              key={id}
+            />
           ))}
         </ButtonsWrapper>
 
         <motion.h1 variants={fromRightToLeft} initial="hidden" animate="show">
-          Kolejne kroki
+          {t("upcomingSkillsHeader")}
         </motion.h1>
         <ButtonsWrapper>
-          {upcomingSkillsData.map(item => (
-            <InfoButton data={item} key={item.id} />
-          ))}
+          {upcomingSkillsData.map(
+            ({ svg, id }: HeadingAndButtonsData, index) => (
+              <InfoButton
+                svg={svg}
+                name={t(`upcomingSkills.${index}.name`)}
+                description={t(`upcomingSkills.${index}.description`)}
+                key={id}
+              />
+            )
+          )}
         </ButtonsWrapper>
       </Wrapper>
     </>

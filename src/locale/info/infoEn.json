@@ -1,0 +1,100 @@
+{
+  "title": "Introduction",
+  "header": "Creating websites became my passion in the middle of last year. I have learned a lot of technologies since then. Some I liked more than others. Therefore, after getting to know React, I stayed with it for longer. In the meantime, I also learned Node.js, which in combination with MongoDB allow you to quickly create a full-fledged backend for websites. In the near future, I want to learn about the technology that allows me to write mobile applications. This will likely be ReactNative",
+  "skillsHeader": "What I learnt",
+  "upcomingSkillsHeader": "Next steps",
+  "headings": [
+    {
+      "name": "Well designed",
+      "description": "The websites I create are always designed by me from the very beginning. I most often use Figma for this purpose. I often check design websites and blogs to stay up to date with trends in this rapidly changing environment."
+    },
+    {
+      "name": "Well designed",
+      "description": "The websites I create are always designed by me from the very beginning. I most often use Figma for this purpose. I often check design websites and blogs to stay up to date with trends in this rapidly changing environment."
+    },
+    {
+      "name": "Well designed",
+      "description": "The websites I create are always designed by me from the very beginning. I most often use Figma for this purpose. I often check design websites and blogs to stay up to date with trends in this rapidly changing environment."
+    },
+    {
+      "name": "Well designed",
+      "description": "The websites I create are always designed by me from the very beginning. I most often use Figma for this purpose. I often check design websites and blogs to stay up to date with trends in this rapidly changing environment."
+    }
+  ],
+  "upcomingSkills": [
+    {
+      "name": "Next.js",
+      "description": "Next.js is an open-source React front-end web development framework that enables features such as server-side rendering and static website generation for web applications on React."
+    },
+    {
+      "name": "PHP",
+      "description": "PHP - an interpreted, scripting programming language designed to generate web pages and build web applications in real time."
+    },
+    {
+      "name": "WordPress",
+      "description": "WordPress - a content management system written in PHP, designed mainly for blogs. It uses the MySQL database. It is distributed under the GNU General Public License and is available free of charge."
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "description": "HTML allows to describe the structure of information contained inside the website, giving the appropriate semantic meaning to individual text fragments - forming hyperlinks, paragraphs, headings, lists - and embeds file objects in the text of the document, e.g. multimedia or database elements, e.g. interactive data forms."
+    },
+    {
+      "name": "CSS",
+      "description": "Cascading style sheets - a language used to describe the form of presentation of websites. CSS was developed by the W3C in 1996 as a descendant of DSSSL for use in conjunction with SGML. The first draft of the CSS was proposed in 1994 by Håkon Wium Lie."
+    },
+    {
+      "name": "JavaScript",
+      "description": "The most common use of JavaScript is web pages. These scripts are most often used to provide interaction by reacting to events, validating data entered in forms or creating complex visual effects. JavaScript scripts run by websites have significantly limited access to the user's computer."
+    },
+    {
+      "name": "TypeScript",
+      "description": "TypeScript - A free and open source programming language developed by Microsoft as a superset of JavaScript. It enables optional static typing and class-based object-oriented programming."
+    },
+    {
+      "name": "React",
+      "description": "React.js - JavaScript programming language library, which is used to create graphical interfaces of web applications. It was created by Jordan Walke, a Facebook developer, and inspired by the PHP language extension XHP."
+    },
+    {
+      "name": "Gatsby",
+      "description": "Gatsby is a framework that allows you to build lightning-fast websites and web applications based on React JS. It allows you to easily optimize the website code. The uniqueness of Gatsby is that it combines the advantages of many other solutions."
+    },
+    {
+      "name": "Node.js",
+      "description": "Node.js is an open source, cross-platform runtime for developing server-side applications written in JavaScript. It contributed to the 'JavaScript everywhere' paradigm by allowing programmers to build applications within one programming language instead of relying on separate ones on the server side."
+    },
+    {
+      "name": "Mongodb",
+      "description": "MongoDB - an open, non-relational database management system written in C ++. It is characterized by high scalability, efficiency and the lack of a strictly defined structure of supported databases."
+    },
+    {
+      "name": "GraphQL",
+      "description": "GraphQL is an open source query and data manipulation language for APIs and a runtime for populating queries with existing data. GraphQL was developed internally by Facebook in 2012."
+    },
+    {
+      "name": "Material UI",
+      "description": "React components based on Material Design methodology for faster and easier web development."
+    },
+    {
+      "name": "NPM",
+      "description": "Npm - the default package manager for Node.js, can also be used to manage the front-end layer of web applications."
+    },
+    {
+      "name": "Git",
+      "description": "Git - distributed version control system. It was created by Linus Torvalds as a tool to aid the development of the Linux kernel. Git is free software and is released under the GNU GPL version 2."
+    },
+    {
+      "name": "SASS",
+      "description": "Sass is a preprocessor scripting language that is interpreted or compiled into cascading style sheets. SassScript is the scripting language itself. Sass consists of two syntaxes. The original syntax, called 'indented syntax', uses a Haml-like syntax."
+    },
+    {
+      "name": "Redux",
+      "description": "Redux is an open source JavaScript library for managing application state. It is most often used in libraries like React or Angular to build user interfaces. Like the Flux architecture on Facebook, it was created by Dan Abramov and Andrew Clark."
+    },
+    {
+      "name": "Jest",
+      "description": "It is a JavaScript testing framework operated by Facebook, Inc. designed and built by Christoph Nakazawa with an emphasis on simplicity and support for large web applications. Works with projects using Babel, TypeScript, Node.js, React, Angular, Vue.js, and Svelte."
+    }
+  ]
+}
