@@ -1,24 +1,24 @@
 {
   "title": "Introduction",
-  "header": "Creating websites became my passion in the middle of last year. I have learned a lot of technologies since then. Some I liked more than others. Therefore, after getting to know React, I stayed with it for longer. In the meantime, I also learned Node.js, which in combination with MongoDB allow you to quickly create a full-fledged backend for websites. In the near future, I want to learn about the technology that allows me to write mobile applications. This will likely be ReactNative",
+  "header": "Web design became my passion in the middle of last year. Since then, I have learned numerous technologies. Some of them have been more to my liking than others. Thus, ever since I have discovered React, I stayed with it for longer. In the meantime, I also learned Node.js, which allows me to quickly create a fully-fledged backend for websites when combined with MongoDB. In the near future, I want to learn a technology that will let me write mobile applications. It will probably be ReactNative.",
   "skillsHeader": "What I learnt",
   "upcomingSkillsHeader": "Next steps",
   "headings": [
     {
       "name": "Well designed",
-      "description": "The websites I create are always designed by me from the very beginning. I most often use Figma for this purpose. I often check design websites and blogs to stay up to date with trends in this rapidly changing environment."
+      "description": "The pages I create are always designed by me from the bottom up. For this purpose, I most often use Figma. What is more, I regularly check other pages and blogs dedicated to web design in order to keep up to date with the trends in this rapidly changing environment."
     },
     {
-      "name": "Well designed",
-      "description": "The websites I create are always designed by me from the very beginning. I most often use Figma for this purpose. I often check design websites and blogs to stay up to date with trends in this rapidly changing environment."
+      "name": "Fast",
+      "description": "The pages I create are optimised both by me, during the development, and by the technologies found in the libraries used during the creation of the production page. Recently, I have a very special appreciation for Gatsby.js, which allows for the creation of extremely fast websites."
     },
     {
-      "name": "Well designed",
-      "description": "The websites I create are always designed by me from the very beginning. I most often use Figma for this purpose. I often check design websites and blogs to stay up to date with trends in this rapidly changing environment."
+      "name": "SEO",
+      "description": "SEO is often associated with the process of page optimisation, but in practice, it provides much more opportunities. It also allows for the improvement of technical aspects of the website, content expansion, and link building."
     },
     {
-      "name": "Well designed",
-      "description": "The websites I create are always designed by me from the very beginning. I most often use Figma for this purpose. I often check design websites and blogs to stay up to date with trends in this rapidly changing environment."
+      "name": "Responsive",
+      "description": "I am creating websites with a 'Mobile First' approach. This means that I start designing from the smallest devices and resolutions so that the experience of using them is the best it can be. Then, as the resolution increases, I continuously add new features and expand the page layout."
     }
   ],
   "upcomingSkills": [

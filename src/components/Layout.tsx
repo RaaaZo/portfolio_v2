@@ -13,8 +13,8 @@ const Layout: React.FC<{}> = ({ children }) => {
   return (
     <>
       <GlobalStyles />
-      <Navigation />
       <I18nextProvider i18n={i18next}>
+        <Navigation />
         <LanguageComponent />
         {children}
       </I18nextProvider>

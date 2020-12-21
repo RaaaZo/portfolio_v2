@@ -1,6 +1,10 @@
 {
-  "button": "Informations",
-  "firstParagraph": "Contact with",
-  "span": "me",
-  "secondParagraph": "for cooperation"
+  "button": "Information",
+  "firstParagraph": "If you are interested",
+  "span": "in cooperation",
+  "secondParagraph": "contact me",
+  "about": "About me",
+  "info": "Information",
+  "projects": "Projects",
+  "contact": "Contact"
 }

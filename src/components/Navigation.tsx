@@ -5,8 +5,11 @@ import { motion } from "framer-motion"
 import { logoVariants } from "../utils/animations/variants"
 // @ts-expect-error
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import { useTranslation } from "react-i18next"
 
 const Navigation = () => {
+  const { t } = useTranslation("home")
+
   return (
     <Wrapper>
       <LogoWrapper variants={logoVariants} initial="hidden" animate="visible">
@@ -18,22 +21,22 @@ const Navigation = () => {
       <NavList>
         <li>
           <AniLink fade to="/about">
-            O mnie
+            {t("about")}
           </AniLink>
         </li>
         <li>
           <AniLink fade to="/info">
-            Informacje
+            {t("info")}
           </AniLink>
         </li>
         <li>
           <AniLink fade to="/projects">
-            Projekty
+            {t("projects")}
           </AniLink>
         </li>
         <li>
           <AniLink fade to="/contact">
-            Kontakt
+            {t("contact")}
           </AniLink>
         </li>
       </NavList>
