@@ -21,7 +21,7 @@ const HomeContent = () => {
       animate="show"
     >
       <motion.h1 variants={fadeIn}>Mateusz Koprowicz</motion.h1>
-      <motion.h2 variants={fadeIn}>Web-Developer</motion.h2>
+      <motion.h2 variants={fadeIn}>Frontend Developer</motion.h2>
 
       <AniLink fade to="/info">
         <Button variants={fadeIn}>{t("button")}</Button>
