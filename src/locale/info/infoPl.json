@@ -1,8 +1,7 @@
 {
   "title": "Wprowadzenie",
-  "header": "Tworzenie stron internetowych stało się moją pasją w połowie zeszłego roku. Od tamtego czasu poznałem wiele technologii. Niektóre przypadły mi do gustu bardziej niż inne. Dlatego też po poznaniu Reacta zostałem przy nim na dłużej. W międzyczasie nauczyłem się również Node.js, który w połączeniu z MongoDB pozwalają w szybki sposób stworzyć pełnoprawny backend na potrzeby stron internetowych. W niedalekiej przyszłości chcę poznać technologię pozwalającą na pisanie aplikacji mobilnych. Będzie to prawdopodobnie ReactNative",
+  "header": "Moja przygoda z programowaniem zaczęła się w roku 2021. W tym czasie skupiłem się na rozwoju w kierunku full-stack developera. Moją najmocniejszą stroną wciąż jest frontend, jednak w stopniu średnio-zaawansowanym poznałem Nodejs i frameworki oparte na nim takie jak Express i Nest. W połączeniu ze znajomością baz danych SQL i NoSQL pozwala mi to tworzyć aplikacje full-stackowe. Podczas mojej nauki poznałem również CI/CD oparte na CircleCI jak i podstawy Dockera.",
   "skillsHeader": "Co umiem",
-  "upcomingSkillsHeader": "Kolejne kroki",
   "headings": [
     {
       "name": "Dobrze zaprojektowane",
@@ -19,20 +18,6 @@
     {
       "name": "Responsywne",
       "description": "Tworzę strony z podejściem \"Mobile First\". Oznacza to że rozpoczynam projektowanie od najmniejszych urządzeń i rozdzielczości, aby doświadczenie z użytkowania na nich było jak najlepsze. Następnie wraz ze wzrostem rozdzielczości stale dokładam nowe funkcjonalności oraz rozbudowuje aktualny układ strony."
-    }
-  ],
-  "upcomingSkills": [
-    {
-      "name": "Next.js",
-      "description": "Next.js jest frameworkiem WWW typu open-source do programowania front-end React, który umożliwia takie funkcje, jak renderowanie po stronie serwera i generowanie statycznych witryn internetowych dla aplikacji internetowych opartych na React."
-    },
-    {
-      "name": "PHP",
-      "description": "PHP – interpretowany, skryptowy język programowania zaprojektowany do generowania stron internetowych i budowania aplikacji webowych w czasie rzeczywistym."
-    },
-    {
-      "name": "WordPress",
-      "description": "WordPress – napisany w języku PHP system zarządzania treścią zaprojektowany głównie do obsługi blogów. Wykorzystuje bazę danych MySQL. Rozpowszechniany jest na licencji GNU General Public License i jest dostępny bezpłatnie."
     }
   ],
   "skills": [
@@ -95,6 +80,22 @@
     {
       "name": "Jest",
       "description": "Jest to framework do testowania JavaScript obsługiwany przez Facebook, Inc. zaprojektowany i zbudowany przez Christopha Nakazawę z naciskiem na prostotę i obsługę dużych aplikacji internetowych. Działa z projektami używającymi Babel, TypeScript, Node.js, React, Angular, Vue.js i Svelte."
+    },
+    {
+      "name": "CircleCI",
+      "description": "CircleCI to platforma do ciągłej integracji i ciągłego dostarczania, której można używać do wdrażania praktyk DevOps."
+    },
+    {
+      "name": "Nest",
+      "description": "Nest JS to framework, który pomaga budować aplikacje oparte na Nodejs. Framework Nest jest zbudowany przy użyciu TypeScript. Umożliwia tworzenie wysoce skalowalnych i testowalnych aplikacji. Zbudowany na bazie Expressa"
+    },
+    {
+      "name": "Express",
+      "description": "Express.js, lub po prostu Express, to back-endowa platforma aplikacji webowych do budowania interfejsów API RESTful za pomocą Node.js, wydana jako darmowe i otwarte oprogramowanie na licencji MIT"
+    },
+    {
+      "name": "Next",
+      "description": "Next.js to framework do tworzenia stron internetowych typu open source stworzony przez Vercel, umożliwiający tworzenie aplikacji internetowych opartych na React z renderowaniem po stronie serwera i generowaniem statycznych stron internetowych."
     }
   ]
 }

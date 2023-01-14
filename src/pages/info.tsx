@@ -11,7 +11,7 @@ import {
 import InfoButton from "../components/InfoButton"
 import SEO from "../components/SEO"
 import SingleHeading from "../components/SingleHeading"
-import { headingData, skillsData, upcomingSkillsData } from "../data/infoData"
+import { headingData, skillsData } from "../data/infoData"
 import {
   fadeInWithStagger,
   fromLeftToRight,
@@ -47,8 +47,6 @@ const InfoPage = () => {
               key={id}
             />
           ))}
-
-          {console.log()}
         </Heading>
 
         <motion.h1 variants={fromRightToLeft} initial="hidden" animate="show">
@@ -63,22 +61,6 @@ const InfoPage = () => {
               key={id}
             />
           ))}
-        </ButtonsWrapper>
-
-        <motion.h1 variants={fromRightToLeft} initial="hidden" animate="show">
-          {t("upcomingSkillsHeader")}
-        </motion.h1>
-        <ButtonsWrapper>
-          {upcomingSkillsData.map(
-            ({ svg, id }: HeadingAndButtonsData, index) => (
-              <InfoButton
-                svg={svg}
-                name={t(`upcomingSkills.${index}.name`)}
-                description={t(`upcomingSkills.${index}.description`)}
-                key={id}
-              />
-            )
-          )}
         </ButtonsWrapper>
       </Wrapper>
     </>

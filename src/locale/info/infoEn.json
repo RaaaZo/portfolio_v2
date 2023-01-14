@@ -1,8 +1,7 @@
 {
   "title": "Introduction",
-  "header": "Web design became my passion in the middle of last year. Since then, I have learned numerous technologies. Some of them have been more to my liking than others. Thus, ever since I have discovered React, I stayed with it for longer. In the meantime, I also learned Node.js, which allows me to quickly create a fully-fledged backend for websites when combined with MongoDB. In the near future, I want to learn a technology that will let me write mobile applications. It will probably be ReactNative.",
+  "header": "My adventure with programming began in 2021. At that time, I focused on developing into a full-stack developer. My strongest point is still the frontend, but at an intermediate level I got to know Nodejs and frameworks based on it, such as Express and Nest. Combined with the knowledge of SQL and NoSQL databases, it allows me to create full-stack applications. During my learning I also got to know CI/CD based on CircleCI as well as the basics of Docker.",
   "skillsHeader": "What I learnt",
-  "upcomingSkillsHeader": "Next steps",
   "headings": [
     {
       "name": "Well designed",
@@ -19,20 +18,6 @@
     {
       "name": "Responsive",
       "description": "I am creating websites with a 'Mobile First' approach. This means that I start designing from the smallest devices and resolutions so that the experience of using them is the best it can be. Then, as the resolution increases, I continuously add new features and expand the page layout."
-    }
-  ],
-  "upcomingSkills": [
-    {
-      "name": "Next.js",
-      "description": "Next.js is an open-source React front-end web development framework that enables features such as server-side rendering and static website generation for web applications on React."
-    },
-    {
-      "name": "PHP",
-      "description": "PHP - an interpreted, scripting programming language designed to generate web pages and build web applications in real time."
-    },
-    {
-      "name": "WordPress",
-      "description": "WordPress - a content management system written in PHP, designed mainly for blogs. It uses the MySQL database. It is distributed under the GNU General Public License and is available free of charge."
     }
   ],
   "skills": [
@@ -95,6 +80,18 @@
     {
       "name": "Jest",
       "description": "It is a JavaScript testing framework operated by Facebook, Inc. designed and built by Christoph Nakazawa with an emphasis on simplicity and support for large web applications. Works with projects using Babel, TypeScript, Node.js, React, Angular, Vue.js, and Svelte."
+    },
+    {
+      "name": "CircleCI",
+      "description": "CircleCI is a continuous integration and continuous delivery platform that can be used to implement DevOps practices."
+    },
+    {
+      "name": "Nest",
+      "description": "Nest JS is a framework that helps build Node applications. JS server-side applications. The Nest framework is built using TypeScript which allows developers to build highly scalable and testable applications. Built on top of Express."
+    },
+    {
+      "name": "Next",
+      "description": "Next.js is an open-source web development framework created by Vercel enabling React-based web applications with server-side rendering and generating static websites."
     }
   ]
 }

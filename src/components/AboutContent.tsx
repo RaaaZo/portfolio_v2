@@ -18,10 +18,6 @@ const AboutContent = () => {
       <Line />
 
       <motion.p>{t("aboutContent.thirdParagraph")}</motion.p>
-
-      <Line />
-
-      <motion.p>{t("aboutContent.fourthParagraph")}</motion.p>
     </>
   )
 }

@@ -3,15 +3,13 @@
   "welcomeContent": {
     "firstSpan": "My name is",
     "secondSpan": "Mateusz Koprowicz",
-    "thirdSpan": "and I am a web-developerem"
+    "thirdSpan": "and I am a Frontend Developer"
   },
   "aboutContent": {
-    "firstParagraph": "In June this year, I obtained a master's degree in Information Systems in Security at the Naval Academy in Gdynia. I learned the basics of programming in college, but I became more interested in this topic only in mid-2019. At the beginning I tried Python, but after a short time I moved to the world of the front-end.",
+    "firstParagraph": "In June of 2020, I obtained a master's degree in Information Systems in Security at the Naval Academy in Gdynia. I learned the basics of programming in college, but I became more interested in this topic in mid-2019. At the beginning I tried Python, but after a short time I moved to the world of the front-end.",
 
-    "secondParagraph": "It turned out to be a hit. The front-end got me hooked from the beginning. After learning HTML and CSS, I finally decided to learn JavaScript thoroughly. After learning the solid basics of JS, I made a few projects to consolidate my knowledge and was faced with the choice of a framework. My first choice was Vue, but after learning its basics, I tried React, which, incidentally, is a library with great possibilities, not a full-fledged framework. I liked it straight away. After learning the basics, I decided to combine learning React with TypeScript and take full advantage of the typing capabilities, which make it easier to, for example, avoid errors in the code.",
+    "secondParagraph": "Currently I am a Frontend developer with 3 years of commercial experience. I started as an intern at Hedea from my hometown. I worked there during the last year of my studies, which were remote at that time due to the pandemic situation. In that place I gained my first experience and learned good practices. After a year, I decided to look for a job in the city where I wanted to live permanently, i.e. Gdynia. Then I also was hired in Netguru, where I work to this day. In Netguru I went from junior to regular role and it was here that I gained a huge dose of knowledge and skills related to international projects.",
 
-    "thirdParagraph": "After getting to know React, it was time for back-end solutions. Knowing JS, I chose Node.js while learning it with the MongoDb database. Thanks to this, my pages could gain new functionalities.",
-
-    "fourthParagraph": "Recently, I decided to go a step further and learn Gatsby.js. For now I have mastered its basics and am still honing my skills, but I plan to learn Next.js as well. In the meantime, I got to know many libraries that facilitate the work of developers and allow you to bring websites to a higher level."
+    "thirdParagraph": "During my commercial career, I have participated in many international projects. Thanks to this, I developed my skills in the field of good code development practices, design patterns, got to know many new libraries, and also learned how to work in multicultural teams. This experience allows me to efficiently overcome emerging challenges."
   }
 }

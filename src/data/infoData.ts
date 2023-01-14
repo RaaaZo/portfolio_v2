@@ -18,8 +18,6 @@ import {
   FaNpm,
   FaGitAlt,
   FaSass,
-  FaPhp,
-  FaWordpress,
 } from "react-icons/fa"
 import {
   SiGatsby,
@@ -27,10 +25,13 @@ import {
   SiRedux,
   SiJest,
   SiTypescript,
-  SiMaterialUi,
+  SiMaterialui,
   SiGraphql,
-  SiNextDotJs,
+  SiNestjs,
+  SiExpress,
+  SiCircleci,
 } from "react-icons/si"
+import { TbBrandNextjs } from "react-icons/tb"
 
 interface Data {
   id: string
@@ -54,21 +55,6 @@ export const headingData: Data[] = [
   {
     id: uniqid(),
     svg: Responsive,
-  },
-]
-
-export const upcomingSkillsData: Data[] = [
-  {
-    id: uniqid(),
-    svg: SiNextDotJs,
-  },
-  {
-    id: uniqid(),
-    svg: FaPhp,
-  },
-  {
-    id: uniqid(),
-    svg: FaWordpress,
   },
 ]
 
@@ -111,7 +97,7 @@ export const skillsData: Data[] = [
   },
   {
     id: uniqid(),
-    svg: SiMaterialUi,
+    svg: SiMaterialui,
   },
   {
     id: uniqid(),
@@ -132,5 +118,21 @@ export const skillsData: Data[] = [
   {
     id: uniqid(),
     svg: SiJest,
+  },
+  {
+    id: uniqid(),
+    svg: SiNestjs,
+  },
+  {
+    id: uniqid(),
+    svg: SiExpress,
+  },
+  {
+    id: uniqid(),
+    svg: TbBrandNextjs,
+  },
+  {
+    id: uniqid(),
+    svg: SiCircleci,
   },
 ]
